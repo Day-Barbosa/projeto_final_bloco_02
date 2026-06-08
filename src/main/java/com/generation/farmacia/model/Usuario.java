@@ -21,8 +21,8 @@ public class Usuario {
     @NotBlank
     private String senha;
 
-    private String tipo; // opcional: ROLE_USER, ROLE_ADMIN
-
+    private String tipo; 
+    
     // Getters e Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }

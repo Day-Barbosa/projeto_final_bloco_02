@@ -15,14 +15,12 @@ public class UserDetailsImpl implements UserDetails {
     private String username;
     private String password;
 
-    // Aqui você pode adicionar perfis/roles se quiser trabalhar com autorização
+    // Aqui pode adicionar perfis/roles se quiser trabalhar com autorização
     private List<GrantedAuthority> authorities;
 
     public UserDetailsImpl(Usuario usuario) {
         this.username = usuario.getUsuario();
         this.password = usuario.getSenha();
-        // Se tiver campo "tipo" ou "role" em Usuario, pode mapear para authorities
-        // Exemplo: this.authorities = List.of(new SimpleGrantedAuthority(usuario.getTipo()));
     }
 
     @Override

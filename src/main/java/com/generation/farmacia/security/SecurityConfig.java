@@ -38,7 +38,7 @@ public class SecurityConfig {
                 // Endpoints públicos
                 .requestMatchers("/usuarios/cadastrar").permitAll()
                 .requestMatchers("/usuarios/logar").permitAll()
-                // Exemplo: permitir GET em categorias e produtos sem login
+                // Permite GET em categorias e produtos sem login
                 .requestMatchers(HttpMethod.GET, "/categorias/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/produtos/**").permitAll()
                 // Qualquer outra requisição exige autenticação

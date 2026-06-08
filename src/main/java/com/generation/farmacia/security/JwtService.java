@@ -17,7 +17,7 @@ public class JwtService {
 
     private static final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
 
-    // Tempo de expiração do token (exemplo: 1 hora)
+    // Tempo de expiração do token
     private static final long EXPIRATION_TIME = 3600000;
 
     // Gera o token JWT
